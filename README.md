@@ -37,9 +37,9 @@ Como estratégia para a solução do projeto, definimos as seguintes etapas:
 
 - **3. Pré-Processamento dos Dados:** o principal objetivo nessa etapa é realizar a preparação dos dados para a modelagem. Entre as práticas abordadas nessa sessão estão: balanceamento de classes, limpeza dos dados, lematização e transformação dos dados em vetores numéricos.
 
-- **4. Modelagem Preditiva:** aqui, iremos criar o modelo preditivo utilizando o algoritmo Naive Bayes. Como métricas de avaliação, verificaremos a acurácia, recall, F1 Score e também a matriz de confusão.
+- **4. Modelagem Preditiva:** aqui, iremos criar o modelo preditivo utilizando o algoritmo *Naive Bayes*. Como métricas de avaliação, verificaremos a *accuracy*, *recall*, *f1 score* e também a matriz de confusão.
 
-- **5. Similaridade de Dados:** esta etapa foi inserida como uma análise adicional que tem como objetivo verificar as similaridades entre as palavras mais frequentes. Para a realização dessa tarefa utilizamos o algoritmo Word2Vec.
+- **5. Similaridade de Dados:** esta etapa foi inserida como uma análise adicional que tem como objetivo verificar as similaridades entre as palavras mais frequentes. Para a realização dessa tarefa utilizamos o algoritmo *Word2Vec*.
 
 - **6. Classificando Tweets:** esta etapa se refere ao objetivo principal do projeto. Com o modelo treinado, iremos realizar a coleta de uma nova base de dados diretamente do Twitter, utilizando a própria API da rede social. Após isso, iremos apresentar esses dados ao modelo preditivo para analisarmos a sua performance.
 
@@ -69,12 +69,34 @@ As principais tarefas abordadas foram:
  
  Abaixo segue as métricas alcançadas com os dados de teste: 
  
-|    Modelo      | ***Accuracy***  | ***Precision*** | ***Recall***    | ***F1-score***  |
+|    Classe      | ***Accuracy***  | ***Precision*** | ***Recall***    | ***F1-score***  |
 |:--------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 | Negativo       | 0.92            | 0.90            | 0.94            | 0.92            |
-| Positivo	     | 0.92            | 0.94            | 0.90            | 0.92            |
+| Positivo	      | 0.92            | 0.94            | 0.90            | 0.92            |
  
  # Classificando Tweets
  
- 
+Para realizar a coleta dos tweets utilizaremos a biblioteca *Tweepy*, uma das mais utilizadas para esse tipo de tarefa. Foram coletados 500 tweets, que passaram pelo mesmo pré-processamento dos dados de treino. 
+
+Para assegurar um melhor resultado, consideramos somente os tweets em que as probabilidades de classificação foram maiores que 85% e menores que 10%.
+
+# Conclusões Finais
+
+O maior desafio desse projeto estava em não possuir um conjunto de dados pré-etiquetados para o treinamento do modelo.
+
+Por conta disso, utilizamos um conjunto com dados similares ao tema abordado.
+
+Durante a fase de preparação dos dados, aplicamos técnicas amplamente utilizadas em PLN e que foram cruciais para o modelo conseguir interpretar as informações e realizar as classificações em um conjunto de dados relativamente diferente do que foi utilizado para seu treinamento.
+
+Em relação ao desempenho do modelo treinado com o algoritmo Naive Bayes, conseguimos um resultado bastante satisfatório.
+
+Podemos perceber que para alguns tweets, o modelo teve maior dificuldade para realizar as classificações, e por esse motivo, consideramos apenas as classificações mais assertivas.
+
+Apesar desse projeto ter uma complexidade de nível básico em PLN, poderíamos utilizar as mesmas abordagens vistas aqui para treinar um modelo capaz de classificar tweets referentes a qualquer tema, e assim, auxiliar as áreas de interesse a tomar as melhores decisões para a empresa.
+
+# Autor
+
+Rafael Felippe  
+
+[<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/rafaelfelippe/)
  
