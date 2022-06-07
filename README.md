@@ -19,5 +19,9 @@ Outro desafio desse projeto é em relação a linguagem das mensagens publicadas
 # Dicionário de Dados
 
 Como descrito acima, iremos utilizar o conjunto de dados do grupo B2W Digital para o treinamento do modelo.
+Esse conjunto está dividido em dois arquivos, "train.csv" e "test.csv", porém, iremos utilizar apenas o conjunto de treino e os seguintes atributos:
 
-Esse conjunto está dividido em dois arquivos, "train.csv" e "test.csv", porém, vamos utilizar apenas o conjunto de treino, que possui as avaliações dos consumidores.
+| Variáveis                        | Descrição                              |
+| -------------------------------- | -------------------------------------- |
+| review_text                      | texto principal da avaliação           |                          
+| rating                           | nota atribuída a avaliação, de 1 a 5   |
