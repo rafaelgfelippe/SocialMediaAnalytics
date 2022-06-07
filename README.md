@@ -19,9 +19,28 @@ Outro desafio desse projeto é em relação a linguagem das mensagens publicadas
 # Dicionário de Dados
 
 Como descrito acima, iremos utilizar o conjunto de dados do grupo B2W Digital para o treinamento do modelo.
+
 Esse conjunto está dividido em dois arquivos, "train.csv" e "test.csv", porém, iremos utilizar apenas o conjunto de treino e os seguintes atributos:
 
 | Variáveis                        | Descrição                              |
 | -------------------------------- | -------------------------------------- |
-| review_text                      | texto principal da avaliação           |                          
-| rating                           | nota atribuída a avaliação, de 1 a 5   |
+| review_text                      | Texto principal da avaliação           |                          
+| rating                           | Nota atribuída a avaliação, de 1 a 5   |
+
+# Estratégia da Solução
+
+Como estratégia para a solução do projeto, definimos as seguintes etapas:
+
+- **1. Entendimento do Negócio:** nessa etapa inicial, realizamos uma breve introdução sobre o tema do projeto e definimos nossos objetivos.
+
+- **2. Entendimento dos Dados:** nessa etapa, definimos o conjunto de dados que iremos utilizar e realizamos um tratamento a fim de verificar possíveis inconsistências nos dados.
+
+- **3. Pré-Processamento dos Dados:** o principal objetivo nessa etapa é realizar a preparação dos dados para a modelagem. Entre as práticas abordadas nessa sessão estão: balanceamento de classes, limpeza dos dados, lematização e transformação dos dados em vetores numéricos.
+
+- **4. Modelagem Preditiva:** aqui, iremos criar o modelo preditivo utilizando o algoritmo Naive Bayes. Como métricas de avaliação, verificaremos a acurácia, recall, F1 Score e também a matriz de confusão.
+
+- **5. Similaridade de Dados:** esta etapa foi inserida como uma análise adicional que tem como objetivo verificar as similaridades entre as palavras mais frequentes. Para a realização dessa tarefa utilizamos o algoritmo Word2Vec.
+
+- **6. Classificando Tweets:** esta etapa se refere ao objetivo principal do projeto. Com o modelo treinado, iremos realizar a coleta de uma nova base de dados diretamente do Twitter, utilizando a própria API da rede social. Após isso, iremos apresentar esses dados ao modelo preditivo para analisarmos a sua performance.
+
+- **7. Conclusões Finais:** por fim, aqui, iremos deixar nossas conclusões finais do projeto.
