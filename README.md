@@ -44,3 +44,37 @@ Como estratégia para a solução do projeto, definimos as seguintes etapas:
 - **6. Classificando Tweets:** esta etapa se refere ao objetivo principal do projeto. Com o modelo treinado, iremos realizar a coleta de uma nova base de dados diretamente do Twitter, utilizando a própria API da rede social. Após isso, iremos apresentar esses dados ao modelo preditivo para analisarmos a sua performance.
 
 - **7. Conclusões Finais:** por fim, aqui, iremos deixar nossas conclusões finais do projeto.
+
+# Pré-Processamento dos Dados
+
+Uma das principais tarefas envolvendo a etapa de pré-processamento dos dados foi em relação a criação dos rótulos da variável resposta. Para esse projeto, precisávamos de um conjunto de dados com os rótulos "positivo" e "negativo". 
+
+Nesse sentido, separamos as classes da variável **`rating`** da seguinte forma:
+
+- Avaliações com valores 1 e 2 foram consideradas negativas.
+- Avaliações com valor 5 foram consideradas positivas.
+
+Após essa separação, selecionamos 20.000 amostras de cada conjunto, resultando em um corpus igualmente distribuído. Além disso, também foi necessário realizar a limpeza dos dados, deixando-os apropriados para a modelagem preditiva. 
+
+As principais tarefas abordadas foram: 
+
+- Remoção de palavras irrelevantes e acentuações.
+- Substituição de letras maiúsculas por minúsculas.
+- Lematização.
+- Conversão de textos para vetores numéricos.
+
+# Modelagem Preditiva
+
+ O algoritmo *Multinomial Naive Bayes* foi o escolhido para realizar a classificação dos tweets. 
+ 
+ Abaixo segue as métricas alcançadas com os dados de teste: 
+ 
+|    Modelo      | ***Accuracy***  | ***Precision*** | ***Recall***    | ***F1-score***  |
+|:--------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+| Negativo       | 0.92            | 0.90            | 0.94            | 0.92            |
+| Positivo	     | 0.92            | 0.94            | 0.90            | 0.92            |
+ 
+ # Classificando Tweets
+ 
+ 
+ 
