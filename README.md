@@ -82,15 +82,11 @@ Para assegurar um melhor resultado, consideramos somente os tweets em que as pro
 
 # Conclusões Finais
 
-O maior desafio desse projeto estava em não possuir um conjunto de dados pré-etiquetados para o treinamento do modelo.
-
-Por conta disso, utilizamos um conjunto com dados similares ao tema abordado.
+O maior desafio desse projeto estava em não possuir um conjunto de dados pré-etiquetados para o treinamento do modelo. Por conta disso, utilizamos um conjunto com dados similares ao tema abordado.
 
 Durante a fase de preparação dos dados, aplicamos técnicas amplamente utilizadas em PLN e que foram cruciais para o modelo conseguir interpretar as informações e realizar as classificações em um conjunto de dados relativamente diferente do que foi utilizado para seu treinamento.
 
-Em relação ao desempenho do modelo treinado com o algoritmo Naive Bayes, conseguimos um resultado bastante satisfatório.
-
-Podemos perceber que para alguns tweets, o modelo teve maior dificuldade para realizar as classificações, e por esse motivo, consideramos apenas as classificações mais assertivas.
+Em relação ao desempenho do modelo treinado com o algoritmo *Naive Bayes*, conseguimos um resultado bastante satisfatório. Podemos perceber que para alguns tweets, o modelo teve maior dificuldade para realizar as classificações, e por esse motivo, consideramos apenas as classificações mais assertivas.
 
 Apesar desse projeto ter uma complexidade de nível básico em PLN, poderíamos utilizar as mesmas abordagens vistas aqui para treinar um modelo capaz de classificar tweets referentes a qualquer tema, e assim, auxiliar as áreas de interesse a tomar as melhores decisões para a empresa.
 
